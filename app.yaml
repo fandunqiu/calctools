@@ -1,0 +1,16 @@
+application: calctools
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /zipme
+  script: zipme.py
+  login: admin
+
+- url: /base64
+  script: ibase64.py
+- url: /pinyin
+  script: pinyin.py
+- url: .*
+  script: main.py
